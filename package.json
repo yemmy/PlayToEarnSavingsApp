@@ -1,13 +1,16 @@
 {
   "name": "web3bridge-savings-group",
   "version": "0.1.0",
+  "homepage": "https://PlayToEarnSavingsApp.github.io/PlayToEarnSavingsApp",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "echo 'No lint configured'"
+    "lint": "echo 'No lint configured'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
